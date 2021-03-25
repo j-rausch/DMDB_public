@@ -1,0 +1,158 @@
+{
+    "title": "Exercise 03 - SQL II Session",
+    "description": "ETH Zürich DMDB 2021: Scenario to assist with running queries during exercise 03.",
+    "difficulty": "Beginner",
+    "time": "10 minutes",
+    "details": {
+        "steps": [
+              {
+                  "title": "Step 1",
+                  "text": "step1.md",
+                  "code": "foreground.sh"
+              },
+              {
+                "title": "Task 1, Rewriting Queries (TPC-H) 1",
+                "text": "step2.md"
+              },
+              {
+                "title": "Task 2, Rewriting Queries (TPC-H) 2",
+                "text": "step3.md"
+              },
+              {
+                "title": "Task 2, Rewriting Queries (TPC-H) 2",
+                "text": "step4.md"
+              },
+              {
+                "title": "Task 3, Statistics on Salaries (Employees)",
+                "text": "step5.md"
+              },
+              {
+                "title": "Task 3, Statistics on Salaries (Employees)",
+                "text": "step6.md"
+              },
+              {
+                "title": "Task 3, Statistics on Salaries (Employees)",
+                "text": "step7.md"
+              },
+              {
+                "title": "Task 4, Statistics on Salaries (Employees) 2",
+                "text": "step8.md"
+              },
+              {
+                "title": "Task 4, Statistics on Salaries (Employees) 2",
+                "text": "step9.md"
+              },
+              {
+                "title": "Task 5, Statistics on Salaries (Employees) 3",
+                "text": "step10.md"
+              },
+              {
+                "title": "Task 5, Statistics on Salaries (Employees) 3",
+                "text": "step11.md"
+              },
+              {
+                "title": "Task 6, Creating a view (Employees) 1",
+                "text": "step12.md"
+              },
+              {
+                "title": "Task 6, Creating a view (Employees) 1",
+                "text": "step13.md"
+              },
+              {
+                "title": "Task 6, Creating a view (Employees) 1",
+                "text": "step14.md"
+              },
+              {
+                "title": "Task 7, Creating a view (Employees) 2",
+                "text": "step15.md"
+              },
+              {
+                "title": "Task 7, Creating a view (Employees) 2",
+                "text": "step16.md"
+              },
+              {
+                "title": "Task 8, Top Dogs (Employees) 1",
+                "text": "step17.md"
+              },
+              {
+                "title": "Task 8, Top Dogs (Employees) 1",
+                "text": "step18.md"
+              },
+              {
+                "title": "Task 9, Top Dogs (Employees) 2",
+                "text": "step19.md"
+              },
+              {
+                "title": "Task 9, Top Dogs (Employees) 2",
+                "text": "step20.md"
+              },
+              {
+                "title": "Task 10, Top Dogs (Employees) 3",
+                "text": "step21.md"
+              },
+              {
+                "title": "Task 10, Top Dogs (Employees) 3",
+                "text": "step22.md"
+              },
+              {
+                "title": "Task 11, Raffle (Employees)",
+                "text": "step23.md"
+              },
+              {
+                "title": "Task 11, Raffle (Employees)",
+                "text": "step24.md"
+              },
+              {
+                "title": "Task 12, Connections (ZVV) 1",
+                "text": "step25.md"
+              },
+              {
+                "title": "Task 12, Connections (ZVV) 1",
+                "text": "step26.md"
+              },
+              {
+                "title": "Task 13, Connections (ZVV) 2",
+                "text": "step27.md"
+              },
+              {
+                "title": "Task 13, Connections (ZVV) 2",
+                "text": "step28.md"
+              }
+        ],
+        "intro": {
+            "text": "intro.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "datasets.zip",
+                    "target": "/tmp/"
+                },
+                {
+                    "file": "pgcli.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "psql.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "populate.sh",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                }
+            ]
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}
