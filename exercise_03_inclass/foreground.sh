@@ -23,4 +23,4 @@ then
 fi
 wait
 
-./populate.sh
+/usr/local/bin/populate.sh
