@@ -36,36 +36,24 @@
               },
               {
                 "title": "Task 4, Top Dogs (Employees) 1",
-                "text": "step17.md"
+                "text": "step8.md"
               },
               {
-                "title": "Task 8, Top Dogs (Employees) 1",
-                "text": "step18.md"
+                "title": "Task 4, Top Dogs (Employees) 1",
+                "text": "step9.md"
               },
               {
-                "title": "Task 9, Top Dogs (Employees) 2",
-                "text": "step19.md"
+                "title": "Task 5, Top Dogs (Employees) 2",
+                "text": "step10.md"
               },
               {
-                "title": "Task 9, Top Dogs (Employees) 2",
-                "text": "step20.md"
+                "title": "Task 5, Top Dogs (Employees) 2",
+                "text": "step11.md"
               },
               {
-                "title": "Task 12, Connections (ZVV) 1",
+                "title": "Task 6, Query Equivalence",
                 "text": "step25.md"
               },
-              {
-                "title": "Task 12, Connections (ZVV) 1",
-                "text": "step26.md"
-              },
-              {
-                "title": "Task 13, Connections (ZVV) 2",
-                "text": "step27.md"
-              },
-              {
-                "title": "Task 13, Connections (ZVV) 2",
-                "text": "step28.md"
-              }
         ],
         "intro": {
             "text": "intro.md"
