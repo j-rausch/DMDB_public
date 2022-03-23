@@ -11,46 +11,6 @@
                   "code": "foreground.sh"
               },
               {
-                "title": "Task 1, Rewriting Queries (TPC-H) 1",
-                "text": "step2.md"
-              },
-              {
-                "title": "Task 2, Rewriting Queries (TPC-H) 2",
-                "text": "step3.md"
-              },
-              {
-                "title": "Task 2, Rewriting Queries (TPC-H) 2",
-                "text": "step4.md"
-              },
-              {
-                "title": "Task 3, Statistics on Salaries (Employees)",
-                "text": "step5.md"
-              },
-              {
-                "title": "Task 3, Statistics on Salaries (Employees)",
-                "text": "step6.md"
-              },
-              {
-                "title": "Task 3, Statistics on Salaries (Employees)",
-                "text": "step7.md"
-              },
-              {
-                "title": "Task 4, Statistics on Salaries (Employees) 2",
-                "text": "step8.md"
-              },
-              {
-                "title": "Task 4, Statistics on Salaries (Employees) 2",
-                "text": "step9.md"
-              },
-              {
-                "title": "Task 5, Statistics on Salaries (Employees) 3",
-                "text": "step10.md"
-              },
-              {
-                "title": "Task 5, Statistics on Salaries (Employees) 3",
-                "text": "step11.md"
-              },
-              {
                 "title": "Task 6, Creating a view (Employees) 1",
                 "text": "step12.md"
               },
@@ -85,22 +45,6 @@
               {
                 "title": "Task 9, Top Dogs (Employees) 2",
                 "text": "step20.md"
-              },
-              {
-                "title": "Task 10, Top Dogs (Employees) 3",
-                "text": "step21.md"
-              },
-              {
-                "title": "Task 10, Top Dogs (Employees) 3",
-                "text": "step22.md"
-              },
-              {
-                "title": "Task 11, Raffle (Employees)",
-                "text": "step23.md"
-              },
-              {
-                "title": "Task 11, Raffle (Employees)",
-                "text": "step24.md"
               },
               {
                 "title": "Task 12, Connections (ZVV) 1",

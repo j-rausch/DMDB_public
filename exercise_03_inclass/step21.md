@@ -1,1 +1,0 @@
-[Employees] How many people earn more than the 3rd highest current salary in “Marketing” and also more than the 2nd highest salary in “Finance”? Write the query using the view.
