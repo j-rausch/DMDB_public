@@ -21,7 +21,6 @@ then
     echo "docker container $CONTAINER_NAME in unexpected state."
     exit 1
 fi
-
 wait
 
-
+./populate.sh
