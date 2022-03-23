@@ -1,4 +1,6 @@
-[Employees] Use the view from the previous task to determine the employees (give their full names) earning between the 45th and 55th percentile of the current salary distribution in the company
+[Employee] Which of the following views are updatable?
+
+
 
 1.
 ``
@@ -9,6 +11,7 @@ WHERE e.emp_no = dm.emp_no;
 ``{{execute}}
 
 
+
 2.
 ``
 CREATE VIEW Age AS
@@ -17,12 +20,14 @@ FROM employees;
 ``{{execute}}
 
 
+
 3.
 ``
 CREATE VIEW HiredPast97 AS
 SELECT * FROM employees
 WHERE hire_date >= '01.01.1997';
 ``{{execute}}
+
 
 
 4.
@@ -34,6 +39,7 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = d.dept_no;
 ``{{execute}}
 
 
+
 5.
 ``
 CREATE VIEW Depts AS
@@ -42,6 +48,7 @@ FROM employees e, dept_emp de, departments d
 WHERE e.emp_no = de.emp_no AND de.dept_no = d.dept_no
 GROUP BY  e.emp_no;
 ``{{execute}}
+
 
 
 6.
