@@ -1,6 +1,21 @@
 [Employees] Use the view from the previous task to determine the employees (give their full names) earning between the 45th and 55th percentile of the current salary distribution in the company
 
--- Option 1 -- compute rank manually
+
+-- Option 1 -- with the rank function
+``
+WITH	ranked_current_employees AS (
+SELECT	*, PERCENT_RANK()
+OVER     (ORDER BY salary) AS rank
+FROM     current_employees
+)
+SELECT	e.first_name, e.last_name, salary
+FROM     ranked_current_employees ce
+JOIN       employees e ON e.emp_no = ce.emp_no
+WHERE  rank BETWEEN 0.45 AND 0.55
+``{{execute}}
+
+
+-- Option 2 -- compute rank manually
 ``
 WITH absolute_ranked_employees AS (
 SELECT	e1.emp_no AS emp_no, e1.salary AS salary, COUNT(e2.emp_no) AS absolute_rank
@@ -18,19 +33,6 @@ WHERE  rank BETWEEN 0.45 AND 0.55
 ``{{execute}}
 
 
-
--- Option 2 -- with the rank function
-``
-WITH	ranked_current_employees AS (
-SELECT	*, PERCENT_RANK()
-OVER     (ORDER BY salary) AS rank
-FROM     current_employees
-)
-SELECT	e.first_name, e.last_name, salary
-FROM     ranked_current_employees ce
-JOIN       employees e ON e.emp_no = ce.emp_no
-WHERE  rank BETWEEN 0.45 AND 0.55
-``{{execute}}
 
 
 -- Option 3 -- using a window function
