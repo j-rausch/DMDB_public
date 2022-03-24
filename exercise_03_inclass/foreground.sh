@@ -24,6 +24,7 @@ fi
 wait
 
 
-sleep 5
 cd /
 /usr/local/bin/populate.sh
+wait
+/usr/local/bin/pgcli.sh -h postgres-server -u postgres

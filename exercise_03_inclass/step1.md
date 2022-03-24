@@ -4,6 +4,8 @@ The tutorial should install and start a Postgres server automatically (inside
 docker). Once the installation completes, we have two ways to connect to the
 server. The first is the official client:
 
+Please note that we automatically execute the installations in this tutorial.
+
 `psql.sh -U postgres`{{execute}}
 
 Let's just confirm that we are indeed connected:
