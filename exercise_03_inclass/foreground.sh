@@ -23,3 +23,7 @@ then
 fi
 wait
 
+
+sleep 5
+cd /
+/usr/local/bin/populate.sh
