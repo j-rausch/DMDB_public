@@ -3,7 +3,7 @@
 Select the queries that are correct. Multiple answers might be correct.
 
 
--- Option 1 -- Compute rank manually -- Using JOIN
+-- A -- Compute rank manually -- Using JOIN
 
 ``
 WITH current_dept_emp AS (
@@ -27,7 +27,7 @@ WHERE  rank <= 3
 ``{{execute}}
 
 
--- Using subqueries
+-- B -- Using subqueries
 
 ``
 SELECT	*
@@ -49,7 +49,7 @@ ORDER BY	dept_no, salary DESC
 ``{{execute}}
 
 
---Option 2 -- Use rank function
+-- C -- Use rank function
 
 ``
 WITH current_employees_ranked_by_dept AS (
@@ -67,22 +67,4 @@ FROM    current_employees_ranked_by_dept
 WHERE	rank <= 3
 ``{{execute}}
 
-
--- Option 3
-``
-WITH current_employees_ranked_by_dept AS (
-
-SELECT *, RANK() OVER (
-PARTITION BY de.dept_no
-ORDER       BY salary DESC
-) AS rank
-FROM    current_employees ce   -- use view from previous exercise
-JOIN      dept_emp de ON de.emp_no = ce.emp_no
-JOIN      departments d ON d.dept_no = de.dept_no
-WHERE NOW() BETWEEN de.from_date AND de.to_date
-)
-SELECT *
-FROM    current_employees_ranked_by_dept
-WHERE rank <= 3
-``{{execute}}
 
