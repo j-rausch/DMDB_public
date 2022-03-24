@@ -13,4 +13,20 @@ WHERE e.emp_no NOT IN (
             WHERE dm.to_date > NOW())
 ``{{execute}}
 
+> *The query returns employee numbers, first and last names of all employees who are currently not managers.*
+
 Now let's rewrite it without using the `NOT IN` functionality.
+
+``
+(SELECT e.emp_no, e.first_name, e.last_name
+ FROM employees e)
+EXCEPT
+(SELECT e.emp_no, e.first_name, e.last_name
+ FROM employees e
+ JOIN dept_manager dm ON e.emp_no=dm.emp_no
+ WHERE dm.to_date > NOW());
+``{{execute}}
+
+
+
+

@@ -1,7 +1,8 @@
 [Employee2]
 
-:warning: Altering a database could invalidiate the previous exercises. 
-Make sure you **are done** with them, and in doubt, duplicate the database (only when it's small) :)
+**WARNING**: 
+> Altering a database could invalidiate the previous exercises. 
+> Make sure you *are done* with them, and in doubt, duplicate the database (only when it's small) :)
 
 ``
 CREATE DATABASE employee2

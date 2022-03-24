@@ -44,3 +44,13 @@ INSERT INTO referee (first_name, last_name) VALUES ('Jane', 'Smith');
 INSERT INTO game (game_date, home_team_id, away_team_id, referee_id)
 VALUES ('1307-10-13', 123, 321, 0), ('1307-10-13', 123, 321, 1);
 ``{{execute}}
+
+
+
+1. Correct
+2. -
+3. Correct
+4. Correct
+5. Correct
+6. -
+
