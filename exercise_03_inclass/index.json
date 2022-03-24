@@ -77,23 +77,28 @@
               },
               {
                 "title": "Task 9, Subquery Expressions (Part 1)",
-                "text": "step18.md"
+                "text": "step18.md",
+                "answer": "step18a.md"
               },
               {
                 "title": "Task 9, Subquery Expressions (Part 2)",
-                "text": "step19.md"
+                "text": "step19.md",
+                "answer": "step19a.md"
               },
               {
                 "title": "Task 9, Subquery Expressions (Part 3)",
-                "text": "step20.md"
+                "text": "step20.md",
+                "answer": "step20a.md"
               },
               {
                 "title": "Task 10, Having Clause 1",
-                "text": "step21.md"
+                "text": "step21.md",
+                "answer": "step21a.md"
               },
               {
                 "title": "Task 11, Having Clause 2",
-                "text": "step22.md"
+                "text": "step22.md",
+                "answer": "step22a.md"
               },
               {
                 "title": "Task 12, Alter DB Information",
@@ -101,11 +106,13 @@
               },
               {
                 "title": "Task 12, Null Values (Part 1)",
-                "text": "step24.md"
+                "text": "step24.md",
+                "answer": "step24a.md"
               },
               {
                 "title": "Task 12, Null Values (Part 2)",
-                "text": "step25.md"
+                "text": "step25.md",
+                "answer": "step25a.md"
               },
               {
                 "title": "Task 13, Case Statements",
@@ -117,11 +124,13 @@
               },
               {
                 "title": "Task 14, Custom Database (Part 1)",
-                "text": "step28.md"
+                "text": "step28.md",
+                "answer": "step28a.md"
               },
               {
                 "title": "Task 14, Custom Database (Part 2)",
-                "text": "step29.md"
+                "text": "step29.md",
+                "answer": "step29a.md"
               }
         ],
         "intro": {
