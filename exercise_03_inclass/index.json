@@ -73,6 +73,18 @@
               {
                 "title": "Task 8, Query Unions",
                 "text": "step17.md"
+              },
+              {
+                "title": "Task 9, Subquery Expressions (Part 1)",
+                "text": "step18.md"
+              },
+              {
+                "title": "Task 9, Subquery Expressions (Part 2)",
+                "text": "step19.md"
+              },
+              {
+                "title": "Task 9, Subquery Expressions (Part 3)",
+                "text": "step20.md"
               }
         ],
         "intro": {
