@@ -69,7 +69,8 @@
               },
               {
                 "title": "Task 7, Tram Tracks and Terminals (Part 2)",
-                "text": "step16.md"
+                "text": "step16.md",
+                "answer": "step16a.md"
               },
               {
                 "title": "Task 8, Query Unions",

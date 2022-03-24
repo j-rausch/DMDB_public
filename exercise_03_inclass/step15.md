@@ -6,6 +6,6 @@ A tram track is defined as a tuple of two consecutive stops (stop_name1 , stop_n
 
 stop_sequence(stop_name2) = 1 + stop_sequence(stop_name1)
 
-Below is the query to obtain a SQL query that finds the number of trips for each tram track and lists the 10 most frequented ones.
+Find the query to obtain a SQL query that finds the number of trips for each tram track and lists the 10 most frequented ones.
 
 
