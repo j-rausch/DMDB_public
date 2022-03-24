@@ -29,7 +29,7 @@ JOIN dept_manager dm ON dm.dept_no=de.dept_no
 JOIN salaries se ON e.emp_no=se.emp_no
 JOIN salaries sm ON dm.emp_no=sm.emp_no
 WHERE de.to_date > NOW() AND dm.to_date > NOW() AND se.to_date > NOW() AND sm.to_date > NOW()
-        AND se.salary>sm.salary
+        AND se.salary>sm.salary;
 ``{{execute}}
 
 
