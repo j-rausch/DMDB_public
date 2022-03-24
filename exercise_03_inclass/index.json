@@ -116,7 +116,8 @@
               },
               {
                 "title": "Task 13, Case Statements",
-                "text": "step26.md"
+                "text": "step26.md",
+                "answer": "step26a.md"
               },
               {
                 "title": "Task 14, Custom Database Setup",

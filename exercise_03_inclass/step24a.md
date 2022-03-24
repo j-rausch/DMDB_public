@@ -20,6 +20,7 @@ WHERE from_date <= '1996-12-31' AND to_date >= '1996-12-01';
 ``{{execute}}
 
 3. **CORRECT**
+
 ``
 SELECT COUNT(*)
 FROM   salaries
