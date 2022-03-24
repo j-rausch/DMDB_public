@@ -24,5 +24,5 @@ UNION
 (SELECT p.partid, p.partname
 FROM Part p
 JOIN Supplypart sp ON sp.partid = p.partid
-WHERE sp.supplierid = 33)
+WHERE sp.supplierid = 33);
 ``{{execute}}

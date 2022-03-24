@@ -93,6 +93,34 @@
               {
                 "title": "Task 11, Having Clause 2",
                 "text": "step22.md"
+              },
+              {
+                "title": "Task 12, Alter DB Information",
+                "text": "step23.md"
+              },
+              {
+                "title": "Task 12, Null Values (Part 1)",
+                "text": "step24.md"
+              },
+              {
+                "title": "Task 12, Null Values (Part 2)",
+                "text": "step25.md"
+              },
+              {
+                "title": "Task 13, Case Statements",
+                "text": "step26.md"
+              },
+              {
+                "title": "Task 14, Custom Database Setup",
+                "text": "step27.md"
+              },
+              {
+                "title": "Task 14, Custom Database (Part 1)",
+                "text": "step28.md"
+              },
+              {
+                "title": "Task 14, Custom Database (Part 2)",
+                "text": "step29.md"
               }
         ],
         "intro": {
