@@ -54,3 +54,11 @@ FROM stop_times;
 
 
 
+
+Queries 1 and 6 return the number of trips in the database and the number of trips having at least one stop.
+They are not equivalent, unless assumed that every trip has at least one stop, which is reasonable but technically not enforced by the schema.
+
+Queries 2, 4 and 5 are equivalent and return the number of stops in the database. The WHERE predicate in query 4 evaluates to true for all non-NULL values, which is guaranteed by the schema for stop_name.
+
+Query 3 returns the number of stops per trip.
+

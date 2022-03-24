@@ -39,3 +39,7 @@ LIMIT 1;
 ``{{execute}}
 
 
+
+Queries 1, 2 and 4 are equivalent and return the maximum arrival time in the database.
+
+Query 3 returns the maximum arrival time per trip.
