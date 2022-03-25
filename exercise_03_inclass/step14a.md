@@ -5,31 +5,38 @@ Which queries are equivalent? Two queries are equivalent if they return the same
 Part 2
 
 Query 1.
+
 ``
 SELECT COUNT(*)
 FROM trips;
 ``{{execute}}
+
 Count all trips
 
 Query 2.
+
 ``
 SELECT COUNT(*)
 FROM trips t
 JOIN stop_times st USING(trip_id);
 ``{{execute}}
+
 Count all stop times
 
 
 Query 3.
+
 ``
 SELECT COUNT(*)
 FROM stop_times
 GROUP BY trip_id;
 ``{{execute}}
+
 Count all stop times for each trip
 
 
 Query 4.
+
 ``
 SELECT COUNT(*)
 FROM trips
@@ -37,10 +44,12 @@ JOIN stop_times USING(trip_id)
 JOIN stops USING(stop_id)
 WHERE stop_name LIKE '%';
 ``{{execute}}
+
 Count all stop times
 
 
 Query 5.
+
 ``
 SELECT SUM(valA)
 FROM (SELECT stop_name, COUNT(*) AS valA
@@ -48,10 +57,12 @@ FROM (SELECT stop_name, COUNT(*) AS valA
                 JOIN stops USING(stop_id)
                 GROUP BY stop_name) tabA;
 ``{{execute}}
+
 Count all stop times
 (Sum of counts acts as 'max of max')
 
 Subqueries:
+
 ``
 SELECT stop_name, COUNT(*) AS valA
                   FROM stop_times
@@ -70,10 +81,12 @@ SELECT stop_name, COUNT(*) AS valA
 
 
 Query 6.
+
 ``
 SELECT COUNT(DISTINCT trip_id)
 FROM stop_times;
 ``{{execute}}
+
 Count all distinct trips *that have a stop*
 
 
