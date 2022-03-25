@@ -5,7 +5,6 @@ Fill the gaps to obtain a correct query:
 
 ``
 [[1]] ranked_current_employees AS (
-
 [[2]] *, [[3]]
 [[4]] AS rank
 FROM     current_employees
