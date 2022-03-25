@@ -32,7 +32,8 @@
               },
               {
                 "title": "Task 3, Updatable Views",
-                "text": "step7.md"
+                "text": "step7.md",
+                "answer": "step7a.md"
               },
               {
                 "title": "Task 4, Top Dogs (Employees) 1",
@@ -40,7 +41,8 @@
               },
               {
                 "title": "Task 4, Top Dogs (Employees) 1",
-                "text": "step9.md"
+                "text": "step9.md",
+                "answer": "step9a.md"
               },
               {
                 "title": "Task 5, Top Dogs (Employees) 2",
@@ -52,7 +54,8 @@
               },
               {
                 "title": "Task 6, Query Equivalence",
-                "text": "step12.md"
+                "text": "step12.md",
+                "answer": "step12a.md"
               },
               {
                 "title": "Task 6, Query Equivalence (Part 1)",
@@ -60,7 +63,8 @@
               },
               {
                 "title": "Task 6, Query Equivalence (Part 2)",
-                "text": "step14.md"
+                "text": "step14.md",
+                "answer": "step14a.md"
               },
               {
                 "title": "Task 7, Tram Tracks and Terminals (Part 1)",
