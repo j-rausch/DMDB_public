@@ -5,41 +5,33 @@ Which queries are equivalent? Two queries are equivalent if they return the same
 Part 1
 
 Query 1
-
 ``
 SELECT arrival_time
 FROM stop_times
 ORDER BY arrival_time DESC
 LIMIT 1;
 ``{{execute}}
-
 Get max arrival time
 
-
 Query 2
-
 ``
 SELECT MAX(arrival_time)
 FROM stop_times
 JOIN trips USING (trip_id);
 ``{{execute}}
-
 Get max arrival time
 
 
 Query 3.
-
 ``
 SELECT MAX(arrival_time)
 FROM stop_times
 GROUP BY trip_id;
 ``{{execute}}
-
 Get max arrival time PER TRIP
 
 
 Query 4.
-
 ``
 SELECT MAX(arrival_time) as arrival_time
 FROM stop_times st
@@ -48,11 +40,5 @@ GROUP BY t.trip_id
 ORDER BY arrival_time DESC
 LIMIT 1;
 ``{{execute}}
-
 Get max arrival time. (max of max => max)
 
-
-
-Queries 1, 2 and 4 are equivalent and return the maximum arrival time in the database.
-
-Query 3 returns the maximum arrival time per trip.

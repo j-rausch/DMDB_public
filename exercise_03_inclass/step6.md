@@ -1,7 +1,7 @@
 [Employees] Use the view from the previous task to determine the employees (give their full names) earning between the 45th and 55th percentile of the current salary distribution in the company
 
 
--- Option 1 -- with the rank function
+-- we use the rank function:
 ``
 WITH	ranked_current_employees AS (
 SELECT	*, PERCENT_RANK()
@@ -11,8 +11,22 @@ FROM     current_employees
 SELECT	e.first_name, e.last_name, salary
 FROM     ranked_current_employees ce
 JOIN       employees e ON e.emp_no = ce.emp_no
-WHERE  rank BETWEEN 0.45 AND 0.55
+WHERE  rank BETWEEN 0.45 AND 0.55;
 ``{{execute}}
+
+
+Let's look at the subquery:
+``
+SELECT  *, PERCENT_RANK()
+  OVER     (ORDER BY salary) AS rank
+  FROM     current_employees;
+``{{execute}}
+
+
+
+
+
+--- Some additional options are shown below (they were not part of the exercise task)
 
 
 -- Option 2 -- compute rank manually

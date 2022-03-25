@@ -4,13 +4,15 @@ Which queries are equivalent? Two queries are equivalent if they return the same
 
 Part 2
 
-1.
+Query 1.
+
 ``
 SELECT COUNT(*)
 FROM trips;
 ``{{execute}}
 
-2.
+Query 2.
+
 ``
 SELECT COUNT(*)
 FROM trips t
@@ -18,7 +20,8 @@ JOIN stop_times st USING(trip_id);
 ``{{execute}}
 
 
-3.
+Query 3.
+
 ``
 SELECT COUNT(*)
 FROM stop_times
@@ -26,7 +29,8 @@ GROUP BY trip_id;
 ``{{execute}}
 
 
-4.
+Query 4.
+
 ``
 SELECT COUNT(*)
 FROM trips
@@ -36,7 +40,8 @@ WHERE stop_name LIKE '%';
 ``{{execute}}
 
 
-5.
+Query 5.
+
 ``
 SELECT SUM(valA)
 FROM (SELECT stop_name, COUNT(*) AS valA
@@ -46,19 +51,10 @@ FROM (SELECT stop_name, COUNT(*) AS valA
 ``{{execute}}
 
 
-6.
+Query 6.
+
 ``
 SELECT COUNT(DISTINCT trip_id)
 FROM stop_times;
 ``{{execute}}
-
-
-
-
-Queries 1 and 6 return the number of trips in the database and the number of trips having at least one stop.
-They are not equivalent, unless assumed that every trip has at least one stop, which is reasonable but technically not enforced by the schema.
-
-Queries 2, 4 and 5 are equivalent and return the number of stops in the database. The WHERE predicate in query 4 evaluates to true for all non-NULL values, which is guaranteed by the schema for stop_name.
-
-Query 3 returns the number of stops per trip.
 
