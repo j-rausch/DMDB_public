@@ -20,7 +20,7 @@ WHERE e.emp_no IN (
 Now let's rewrite it without using the `IN` functionality.
 
 ``
-SELECT DISTINCT e.emp_no, e.first_name, e.last_name
+SELECT e.emp_no, e.first_name, e.last_name
 FROM employees e
 JOIN dept_manager dm ON e.emp_no=dm.emp_no
 JOIN salaries s ON dm.emp_no=s.emp_no

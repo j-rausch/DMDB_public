@@ -17,6 +17,15 @@ WHERE e.emp_no NOT IN (
 
 Now let's rewrite it without using the `NOT IN` functionality.
 
+Using a *left join*.
+``
+SELECT e.emp_no, e.first_name, e.last_name 
+FROM employees e LEFT JOIN dept_manager dm ON e.emp_no = dm.emp_no
+WHERE dm.emp_no IS NULL OR dm.to_date < NOW();
+``{{execute}}
+
+Using a set subtraction.
+
 ``
 (SELECT e.emp_no, e.first_name, e.last_name
  FROM employees e)
