@@ -32,7 +32,6 @@ WHERE  rank <= 3;
 ``
 SELECT *
 FROM    (
-
     SELECT emp_no, salary, dept_no, (
         SELECT COUNT(*)
         FROM     current_employees ins1

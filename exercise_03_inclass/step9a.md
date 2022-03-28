@@ -61,7 +61,6 @@ WITH current_dept_emp AS (
 ``
 SELECT *
 FROM    (
-
     SELECT emp_no, salary, dept_no, (
         SELECT COUNT(*)
         FROM     current_employees ins1
@@ -82,9 +81,9 @@ correct!
 
 subqueries:
 ``
- FROM    dept_emp de
- JOIN    current_employees s USING(emp_no)
- WHERE de.to_date > NOW()
+SELECT * FROM    dept_emp de
+JOIN    current_employees s USING(emp_no)
+WHERE de.to_date > NOW()
 ``{{execute}}
 
 
